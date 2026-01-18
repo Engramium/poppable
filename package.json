@@ -1,0 +1,30 @@
+{
+	"name": "poppable",
+	"version": "1.0.0",
+	"description": "A customizable WordPress block plugin that allows users to create and manage poppable modals easily, enhancing the user experience on their websites.",
+	"author": "Poppable",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --blocks-manifest",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --blocks-manifest"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "latest",
+		"@wordpress/blocks": "latest",
+		"@wordpress/i18n": "latest"
+	},
+	"devDependencies": {
+		"@wordpress/components": "^32.0.0",
+		"@wordpress/dom-ready": "^4.38.0",
+		"@wordpress/eslint-plugin": "^24.0.0",
+		"@wordpress/prettier-config": "^4.38.0",
+		"@wordpress/scripts": "^31.3.0",
+		"prettier": "^3.8.0"
+	}
+}

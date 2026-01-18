@@ -1,0 +1,59 @@
+.wp-block-poppable-poppable {
+	&:not(.wp-block) {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 !important;
+		background: rgba(0, 0, 0, 0.9);
+		justify-content: center;
+		align-items: center;
+		z-index: 9;
+	}
+
+	.poppable-modal-content {
+		background: #000;
+		width: var(--poppable-modal-content-width, 800px);
+		max-width: 90%;
+	}
+
+	.poppable-video-container {
+		position: relative;
+		width: 100%;
+		padding-top: 56.25%; /* 16:9 Aspect Ratio */
+	}
+
+	.poppable-video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.poppable-close-modal {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		font-size: 24px;
+		cursor: pointer;
+		color: #fff;
+		transition: all 0.25s;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	&.has-poppable-video-modal-open {
+		display: flex;
+		max-width: 100%;
+	}
+}
+
+// Add body scroll lock when modal is open
+body:has(.has-poppable-video-modal-open) {
+	overflow: hidden;
+}

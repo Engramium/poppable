@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "poppable/poppable",
+	"version": "1.0.0",
+	"title": "Poppable",
+	"category": "poppable",
+	"icon": "format-video",
+	"description": "Display YouTube videos in a poppable modal.",
+	"attributes": {
+		"contentWidth": {
+			"type": "string",
+			"default": "800px"
+		},
+		"triggerId": {
+			"type": "string",
+			"default": "poppable-video-modal"
+		},
+		"videoUrl": {
+			"type": "string"
+		},
+		"autoplay": {
+			"type": "boolean",
+			"default": false
+		},
+		"showCloseButton": {
+			"type": "boolean",
+			"default": false
+		},
+		"closeOnClickOutside": {
+			"type": "boolean",
+			"default": false
+		},
+		"escOnClose": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}
