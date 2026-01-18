@@ -29,7 +29,7 @@ Poppable is a lightweight Gutenberg block that lets you display YouTube videos i
 * **Lightweight** – No jQuery dependencies, built with vanilla JavaScript
 
 **Development & Source Code:**
-LinkStar is open-source and developed publicly on GitHub.
+Poppable is open-source and developed publicly on GitHub.
 
 GitHub repository: https://github.com/Engramium/poppable
 
