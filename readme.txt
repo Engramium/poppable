@@ -28,6 +28,11 @@ Poppable is a lightweight Gutenberg block that lets you display YouTube videos i
 * **Body Scroll Lock** – Page scrolling is disabled when the modal is open for a focused viewing experience
 * **Lightweight** – No jQuery dependencies, built with vanilla JavaScript
 
+**Development & Source Code:**
+LinkStar is open-source and developed publicly on GitHub.
+
+GitHub repository: https://github.com/Engramium/poppable
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/poppable` directory, or install the plugin through the WordPress plugins screen directly.
@@ -67,4 +72,9 @@ Yes, the video automatically stops and resets when the modal is closed.
 == Changelog ==
 
 = 1.0.0 =
-* Initial release
+* Converted to YouTube Video Popup Block
+
+= 0.1 =
+* Initial public release
+
+
